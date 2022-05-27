@@ -71,6 +71,10 @@ body {
  .insta a{
   padding: 10px;
   text-decoration: none;
+  color: #0a58ca;
+}
+ .insta a:hover{
+  color: #FA8E10;
  }
  #instafeed{
    margin-top: 10px;
@@ -90,6 +94,16 @@ body {
   width: 90%;
   font-size: 25px;
 }
+.coming-soon{
+  padding: 1%;
+}
+.coming-soon img{
+  padding: 1%;
+  margin-top: 10%;
+  height:45%;
+  width:45%;
+}
+
 .meet_us{
   margin: 0 auto;
   font-family: 'Cabin Sketch', cursive;
@@ -186,6 +200,7 @@ textarea::placeholder {
       font-family: 'Single Day', cursive;
       font-family: 'Cabin Sketch', cursive;
       color:ghostwhite;
+      font-size: 55px;
   }
   .c-ml{
       margin-left:7%;
@@ -365,6 +380,7 @@ textarea::placeholder {
     font-family: 'Single Day', cursive;
     font-family: 'Cabin Sketch', cursive;
     color: ghostwhite;
+    font-size: 55px;
   }
   .contact-heading2 hr{
     width: 50%;
@@ -860,6 +876,12 @@ textarea::placeholder {
   .contact-heading2 hr{
     width: 50%;
     margin: 1px auto;
+  }
+  .coming-soon img{
+    padding: 1%;
+    margin-top: 50%;
+    height:55%;
+    width:55%;
   }
   }
   

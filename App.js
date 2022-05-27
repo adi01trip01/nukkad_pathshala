@@ -2,7 +2,6 @@ const express = require("express");
 require("dotenv").config();
 const app = express();
 const bodyParser = require('body-parser');
-///const pics = require("./insta").media;
 const nodemailer = require('nodemailer');
 app.use(express.urlencoded());
 
@@ -10,8 +9,7 @@ app.use(express.urlencoded());
 app.use(express.json());
 app.use(express.static(__dirname + '/public'));
 
-//app.use(bodyParser.urlencoded({extended:false}));
-//app.use(bodyParser.json); 
+
 
 port = 3008
 
@@ -19,8 +17,6 @@ port = 3008
 app.set("view engine", "hbs")
 app.set("views", "./view")
 
-//instagram-web-api
-//console.log(pics);
 
 //Routing
 app.get("/", (req,res) => {
@@ -33,6 +29,14 @@ app.get("/about_us", (req,res) => {
 
 app.get("/contact_us", (req,res) => {
     res.render("contact_us");
+});
+
+app.get("/treat_now", (req,res) => {
+  res.render("treat_now");
+});
+
+app.get("/voulenteer", (req,res) => {
+  res.render("voulenteer");
 });
 
 /*app.post("/message", (req,res) => {
